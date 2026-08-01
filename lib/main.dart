@@ -1,52 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:mtec/task2.dart';
+import 'package:mtec/sign_up.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(NavigationApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class NavigationApp extends StatelessWidget {
+  const NavigationApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Task2());
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        height: double.infinity,
-        color: Colors.red,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-
-          children: [
-            Text(
-              'hello world',
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 30,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-            Text(
-              'hello world',
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 30,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
+    return MaterialApp(home: SignUp());
   }
 }
